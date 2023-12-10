@@ -6,6 +6,6 @@ através do mapeamento de uma base de dados real abstraida em um problema real e
 ## Como usar?
 
 - Tenha o Java instalado em sua máquina
-- baixe a base de dados localizada no endereço https://snap.stanford.edu/data/web-FineFoods.html
-- coloque o arquivo "foods.txt" dentro da pasta src do projeto
-- rode a classe Main.java
+- Baixe a base de dados localizada no endereço https://snap.stanford.edu/data/web-FineFoods.html
+- Coloque o arquivo "foods.txt" dentro da pasta src do projeto
+- Rode a classe Main.java
