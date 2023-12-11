@@ -58,7 +58,7 @@ public class Menu {
 
     //initialize the graph with the data from the file
     private void initializeGraph() {
-        try (BufferedReader br = new BufferedReader(new FileReader("src/foods.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("src/foodsMenor.txt"))) {
             String line;
             String currentUser = null;
             double currentRating = 0.0;
