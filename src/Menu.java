@@ -29,7 +29,9 @@ public class Menu {
         System.out.println("2 - Apresentar Lista de Adjacência");
         System.out.println("3 - Apresentar dados do grafo");
         System.out.println("4 - Apresentar Lista Recomendações de Produtos");
-        System.out.println("5 - Sair");
+        System.out.println("5 - Apresentar Lista Recomendações de Produtos para usuario(AQLL2R1PPR46X)");
+
+        System.out.println("6 - Sair");
         System.out.print("Escolha a sua opção: ");
     }
 
@@ -49,10 +51,13 @@ public class Menu {
                 getRecommendations(getUserInput());
                 break;
             case 5:
+                getRecommendations("AQLL2R1PPR46X");
+                break;
+            case 6:
                 System.out.println("Saindo...");
                 break;
             default:
-                System.out.println("Escolha uma opção entre 1 e 4!");
+                System.out.println("Escolha uma opção entre 1 e 6!");
         }
     }
 
@@ -141,9 +146,9 @@ public class Menu {
         }
 
         //print the recommendations
-        System.out.println("Produtos recomendados para o usuário(com nota maior que 4) " + userId + ":");
-        for (String product : recommendations) {
-            System.out.println(product);
+        System.out.println("Top 5 Produtos recomendados para o usuário(com nota maior que 4) " + userId + ":");
+        for (int i = 0; i < 5; i++) {
+            System.out.println(recommendations.get(i));
         }
     }
 
